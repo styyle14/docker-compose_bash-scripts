@@ -8,9 +8,9 @@ DOCKER_COMPOSE_IMAGE="docker/compose:${DOCKER_COMPOSE_VERSION}"
 
 DOCKER_SOCKET="/var/run/docker.sock"
 
-if [ $# -lt 4 ]; then
+if [ $# -lt 3 ]; then
 	echo "Incorrect number of parameters."
-	echo "Usage: $(basename "$0") [data dir] [yaml-file path] [compose command] <compose args...> [compose service] <service command> <service args...>" 
+	echo "Usage: $(basename "$0") [data dir] [yaml-file path] [compose command] <compose args...> <compose service> <service command> <service args...>" 
 	echo "Exiting now."
 	exit 1
 fi
