@@ -3,7 +3,7 @@
 set -x
 set -e
 
-DOCKER_COMPOSE_VERSION="1.10.0"
+DOCKER_COMPOSE_VERSION="1.25.0"
 DOCKER_COMPOSE_IMAGE="docker/compose:${DOCKER_COMPOSE_VERSION}"
 
 DOCKER_SOCKET="/var/run/docker.sock"
